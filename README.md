@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# number and name of features: 2 features(display images & allow users to vote for their fav beasts)
+
+estimate of time to complete: 7 hours
+start time : 4 pm
+finished: 11:45 pm
+actual time to complete : 2 hours
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
