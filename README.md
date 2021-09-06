@@ -1,9 +1,19 @@
-# number and name of features: 2 features(display images & allow users to vote for their fav beasts)
+# my first app
 
-estimate of time to complete: 7 hours
-start time : 4 pm
-finished: 11:45 pm
-actual time to complete : 2 hours
+## class-01
+
+1. created header , footer and main component
+2. created hornedbeast component which have constractor with props to display title, description and image for each beast using array.map() function to iterate each element in the beasts data array object.
+3. imported all components that had created in previous steps in app.js 
+4. finally called/invoked all components that had imported in sequencelly header,main and footer.
+
+## class-02
+
+1. number and name of features: 2 features(display images & allow users to vote for their fav beasts)
+2. estimate of time to complete: 7 hours
+3. start time : 4 pm
+4. finished: 11:45 pm
+5. actual time to complete : 2 hours
 
 ## Getting Started with Create React App
 
