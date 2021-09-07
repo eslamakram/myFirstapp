@@ -10,10 +10,18 @@
 ## class-02
 
 1. number and name of features: 2 features(display images & allow users to vote for their fav beasts)
-2. estimate of time to complete: 7 hours
+2. estimate of time to complete: 3 hours
 3. start time : 4 pm
 4. finished: 11:45 pm
-5. actual time to complete : 2 hours
+5. actual time to complete : 7 hours
+
+## class-03
+
+1. number and name of features: 2 features( Display a Modal & bootstrap)
+2. estimate of time to complete: 3 hours
+3. start time : 3 pm
+4. finished: 9:45 pm
+5. actual time to complete : 6 hours
 
 ## Getting Started with Create React App
 
