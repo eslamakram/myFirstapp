@@ -21,17 +21,18 @@ import React, { Component } from 'react'
         
         
         return (
-            <>
-                <h2> Title: {this.props.title}</h2>
+
+<div className="container">    
+        <h2> Title: {this.props.title}</h2>
                           
-                <img src={`${this.props.imageRsc}`} alt={this.props.imgName +'  image'} onClick={this.voting} title={this.props.imageTitle}/>
+                <img  className={"beastImg"} src={`${this.props.imageRsc}`} alt={this.props.imgName +'  image'} onClick={this.voting} title={this.props.imageTitle}/>
                 
                 <p> Description: {this.props.description}</p>
-                <p>Votes:{this.state.stateVote} <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMTyFFzeIHq2b23Uotp6p-NgtdM5j5_zoUKw&usqp=CAU"></img></p>
+                <p>Votes:{this.state.stateVote} <img src="https://www.vectorico.com/wp-content/uploads/2019/01/heart-icon-300x300.png" className="heartImg"></img></p>
 
                 {/* <button onClick = {this.voting}> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsMli9qswhAuRZWqB1nENchOg3BASkqBDp9A&usqp=CAU'></img></button> */}
 
-            </>
+ </div>
         )
     }
 }
