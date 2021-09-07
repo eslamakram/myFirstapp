@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+
+.beastImg{
+width: 200px;
+height: 200px;}
+
+.heartImg{
+  width: 20px;
+height: 20px;
+}
+
+.container{
+  align-items: center;
+  font-size: 27px;
+    font-weight: 15%;
+    color: rgb(247, 244, 244);
+     font-family: 'Roboto', sans-serif;
+  width: 250px;
+  height: 400px;
+  background-color: rgba(92, 93, 94, 0.2);
+  border: 1px solid rgba(245, 160, 4, 0.705);
+
+}
+
+.container h2 {
+  color: rgb(236, 9, 9);
+
+  padding: 30px;
+  margin-left: 70px;
+}
