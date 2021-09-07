@@ -22,8 +22,9 @@ class App extends Component {
   }
 
   handleClick = (stateVote) => {
-    this.setState({stateVote: this.state.stateVote + 1 ,
-      stateVote:stateVote})
+    this.setState(
+      {stateVote: this.state.stateVote + 1 ,
+      })
 
   }
 

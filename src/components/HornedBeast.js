@@ -17,8 +17,8 @@ import { Card, Col, Button } from 'react-bootstrap'
 
   getVotes=()=>{
     let stateVote = this.props.stateVote;
-    this.props.handleClick(stateVote)
-    return stateVote;
+  
+    return this.props.handleClick(stateVote);
   }
   
 
@@ -36,11 +36,12 @@ import { Card, Col, Button } from 'react-bootstrap'
     <Card.Text>
     Description: {this.props.description}
     </Card.Text>
-    <Button variant="primary" onClick={this.getVotes }>Vote</Button>
+    {/* <Button variant="primary" onClick={this.getVotes }>Vote</Button> */}
   </Card.Body>
   <Card.Footer className="text-muted">
-    <p>Votes:  {this.getVotes} 
-    <img src="https://www.vectorico.com/wp-content/uploads/2019/01/heart-icon-300x300.png" className="heartImg"></img></p>
+     
+    <img src="https://www.vectorico.com/wp-content/uploads/2019/01/heart-icon-300x300.png" onClick={this.getVotes} className="heartImg"></img>
+    <p>Votes:  {this.getVotes}</p>
                 </Card.Footer>
 </Card>
 
