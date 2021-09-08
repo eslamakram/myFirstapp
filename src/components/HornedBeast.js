@@ -21,18 +21,13 @@ import { Card, Col } from 'react-bootstrap'
     let imageSrc = this.props.imageSrc;
     let description = this.props.description;
     this.props.handleOpen(title, imageSrc, description )
-  }
-
-  
-  
-
-        
+  } 
     render() {
        
                 return (
 
-<Col >
-<Card className="text-center" style={{width: '250px'}}>
+<Col style={{ marginLeft: '50px', marginTop:'50px'}}>
+<Card className="text-center" style={{width: '250px', marginLeft: '50px'}}>
   <Card.Header>Title: {this.props.title}</Card.Header>
   <Card.Body>
   <Card.Img variant="top" src={`${this.props.imageSrc}`} alt={this.props.imgName +'  image'} 
