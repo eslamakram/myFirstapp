@@ -4,7 +4,7 @@
 
 1. created header , footer and main component
 2. created hornedbeast component which have constractor with props to display title, description and image for each beast using array.map() function to iterate each element in the beasts data array object.
-3. imported all components that had created in previous steps in app.js 
+3. imported all components that had created in previous steps in app.js
 4. finally called/invoked all components that had imported in sequencelly header,main and footer.
 
 ## class-02
@@ -23,6 +23,14 @@
 4. finished: 9:45 pm
 5. actual time to complete : 6 hours
 
+## class-04
+
+1. number and name of features: 1 features( Display a form to select beast according users' selection)
+2. estimate of time to complete: 3 hours
+3. start time : 3 pm
+4. finished: 9 pm
+5. actual time to complete : 6 hours
+  
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
