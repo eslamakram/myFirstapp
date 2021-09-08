@@ -7,6 +7,18 @@ import { Card, Col, Button } from 'react-bootstrap'
 
  class HornedBeast extends Component {
 
+  constructor(props){
+    super(props);
+    this.state={
+      stateVote: 0,}}
+
+
+      handleClick = () => {
+        this.setState(
+          {stateVote: this.state.stateVote + 1 ,
+          })
+    
+      }
 
   getHandleOpen=()=>{
     let title = this.props.title;
@@ -15,11 +27,7 @@ import { Card, Col, Button } from 'react-bootstrap'
     this.props.handleOpen(title, imageSrc, description )
   }
 
-  getVotes=()=>{
-    let stateVote = this.props.stateVote;
   
-    return this.props.handleClick(stateVote);
-  }
   
 
         
@@ -28,7 +36,7 @@ import { Card, Col, Button } from 'react-bootstrap'
                 return (
 
 <Col >
-<Card className="text-center">
+<Card className="text-center" style={{width: '250px'}}>
   <Card.Header>Title: {this.props.title}</Card.Header>
   <Card.Body>
   <Card.Img variant="top" src={`${this.props.imageSrc}`} alt={this.props.imgName +'  image'} 
@@ -40,23 +48,13 @@ import { Card, Col, Button } from 'react-bootstrap'
   </Card.Body>
   <Card.Footer className="text-muted">
      
-    <img src="https://www.vectorico.com/wp-content/uploads/2019/01/heart-icon-300x300.png" onClick={this.getVotes} className="heartImg"></img>
-    <p>Votes:  {this.getVotes}</p>
+    <img src="https://www.vectorico.com/wp-content/uploads/2019/01/heart-icon-300x300.png" onClick={this.handleClick} className="heartImg"></img>
+    <p>Votes:  {this.state.stateVote}</p>
                 </Card.Footer>
 </Card>
 
 </Col>
-                //  <div className="container">    
-                //           <h2> Title: {this.props.title}</h2>
-                          
-                //           <img  className={"beastImg"} src={`${this.props.imageSrc}`} alt={this.props.imgName +'  image'} 
-                //           onClick={this.props.handleClick} title={this.props.imageTitle}/>
-                
-                //             <p> Description: {this.props.description}</p>
-                //               <p>Votes:{this.state.stateVote} 
-                //               <img src="https://www.vectorico.com/wp-content/uploads/2019/01/heart-icon-300x300.png" className="heartImg"></img></p>
-
-                // </div>
+               
         )
     }
 }

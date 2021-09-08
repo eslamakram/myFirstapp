@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import HornedBeast from './HornedBeast'
-import BeastsData from '../data.json'
+import { Row } from 'react-bootstrap'
 
  class Main extends Component {
 
@@ -9,20 +9,20 @@ import BeastsData from '../data.json'
       
         return (
             <>
+            <Row>
               {
-                    BeastsData.map( beast => {
+                    this.props.BeastsData.map( beast => {
                          return <HornedBeast 
-                         handleOpen={this.props.handleOpen} 
-                         handleClick={this.props.handleClick}
-                         title={beast.title}
+                                                  title={beast.title}
                          description={beast.description}
                           imageSrc={beast.image_url} imgName={beast.keyword}
                            imageTitle={beast.title } imageVoting={beast.voteBtn}
+                           handleOpen={this.props.handleOpen}
 
               />})
             } 
                 
-              
+                </Row>
               
               
 
