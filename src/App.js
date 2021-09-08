@@ -44,7 +44,7 @@ class App extends Component {
 
     if (value) {
       let filteredData = this.state.data.filter(Beast => {
-        return Beast.horns == value;
+        return Beast.horns === value;
       })
       this.setState({ data: filteredData });
 
