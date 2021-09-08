@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
-import App from '../App'
-
-
-
-import { Card, Col, Button } from 'react-bootstrap'
+import { Card, Col } from 'react-bootstrap'
 
  class HornedBeast extends Component {
 
@@ -47,9 +43,10 @@ import { Card, Col, Button } from 'react-bootstrap'
     {/* <Button variant="primary" onClick={this.getVotes }>Vote</Button> */}
   </Card.Body>
   <Card.Footer className="text-muted">
-     
-    <img src="https://www.vectorico.com/wp-content/uploads/2019/01/heart-icon-300x300.png" onClick={this.handleClick} className="heartImg"></img>
+     <>
+    <img src="https://www.vectorico.com/wp-content/uploads/2019/01/heart-icon-300x300.png" alt="" onClick={this.handleClick} className="heartImg"></img>
     <p>Votes:  {this.state.stateVote}</p>
+    </>
                 </Card.Footer>
 </Card>
 
