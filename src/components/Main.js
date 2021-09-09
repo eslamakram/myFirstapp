@@ -23,6 +23,7 @@ class Main extends Component {
                                 imageSrc={beast.image_url} imgName={beast.keyword}
                                 imageTitle={beast.title} imageVoting={beast.voteBtn}
                                 handleOpen={this.props.handleOpen}
+                                horns={beast.horns}
 
                             />
                         })

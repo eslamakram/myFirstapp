@@ -40,11 +40,11 @@ class App extends Component {
   }
 
   handleSelectForm = (event) => {
-    let value = event.target.value;
+    let value = parseInt(event.target.value);
 
     if (value) {
-      let filteredData = this.state.data.filter(Beast => {
-        return (Beast.horns == value);
+      let filteredData = BeastsData.filter(Beast => {
+        return (Beast.horns === value);
       })
       this.setState({ data: filteredData });
 
@@ -56,17 +56,8 @@ class App extends Component {
 
   }
 
-
-
-
-
-
-
-
   render() {
     return (
-
-
 
       <div>
         <Header />
