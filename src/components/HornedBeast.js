@@ -42,6 +42,10 @@ import { Card, Col } from 'react-bootstrap'
     <img src="https://www.vectorico.com/wp-content/uploads/2019/01/heart-icon-300x300.png" alt="" onClick={this.handleClick} className="heartImg"></img>
     <p>Votes:  {this.state.stateVote}</p>
     </>
+    <>
+    <p>Horns:  {this.props.horns}</p>
+    </>
+
                 </Card.Footer>
 </Card>
 
